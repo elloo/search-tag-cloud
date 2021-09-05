@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+      <form id="fetchImagesWrapper">
+        <label for="searchTerm">Enter ONE alphabetical search term:</label>
+        <input type="text" id="searchTerm" name="searchTerm">
+        <button type="submit">Get An Image</button>
+      </form>
+      <div id="imageDisplayWrapper">
+        <img id="imageToDisplay">
+        <p id="attribution"></p>
+      </div>
+      <div id="tagCloudWrapper">
+        <h2>Search Popularity</h2>
+        <ul id="tags"></ul>
+      </div>
+    </div>
+    <script src="js/display.js"></script>
+    <script src="js/tagCloud.js"></script>
+  </body>
+</html>

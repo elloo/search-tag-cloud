@@ -1,0 +1,96 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/** IMAGE DISPLAY **/
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#imageDisplayWrapper {
+  margin-top: 25px;
+}
+
+#imageToDisplay {
+  width: 550px;
+  height: 350px;
+  border: 1px solid black;
+}
+
+#attribution {
+  margin-top: 0px;
+}
+
+a {
+  color: black;
+}
+
+/** TAG CLOUD **/
+
+#tagCloudWrapper h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+#tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 950px;
+  margin: auto;
+  padding: 0 0 2rem 0;
+  list-style: none;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 1rem;
+}
+
+.tagLink {
+  padding: 5px 5px 0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.least {
+  color: #7dcfb6;
+}
+
+.average {
+  color: #fbd1a2;
+}
+
+.most {
+  color: #e56399;
+}
+
+.least .tagLink:focus,
+.least .tagLink:hover {
+  box-shadow: inset 0 -1.3em 0 0 #7dcfb6;
+}
+.average .tagLink:focus,
+.average .tagLink:hover {
+  box-shadow: inset 0 -1.3em 0 0 #fbd1a2;
+}
+.most .tagLink:focus,
+.most .tagLink:hover {
+  box-shadow: inset 0 -1.3em 0 0 #e56399;
+}
+
+.least .tagLink:focus,
+.least .tagLink:hover,
+.average .tagLink:focus,
+.average .tagLink:hover,
+.most .tagLink:focus,
+.most .tagLink:hover {
+  cursor: pointer;
+  color: white;
+}
