@@ -1,5 +1,4 @@
 const searchForm = document.getElementById('fetchImagesWrapper')
-
 searchForm.addEventListener('submit', displayNewImage)
 
 async function displayNewImage(e, tagSearchTerm){
