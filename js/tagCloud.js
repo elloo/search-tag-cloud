@@ -20,12 +20,13 @@ function addTag(searchTerm){
 }
 
 function handleTerm(termObject, highestSearchCount){
-    const numberOfTerms = termObject.searchCount
+    console.log(termObject)
+    const termSearchCount = termObject.searchCount
     const term = termObject.term
     const maxTagSize = 6
     const tag = document.createElement('li')
     
-    let fontSize = numberOfTerms / highestSearchCount * maxTagSize
+    let fontSize = termSearchCount / highestSearchCount * maxTagSize
     fontSize = fontSize.toFixed()
     if (fontSize <= 1) fontSize = '1'
     const fontSizeProperty = fontSize
